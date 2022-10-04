@@ -1,11 +1,3 @@
-#Create provider
- provider "aws" {
-  region = var.region
-  access_key = var.access_key
-  secret_key = var.secret_access_key
- }
-
-
 #Create S3 bucket
  resource "aws_s3_bucket" "a" {
   bucket = "my-tf-test-bucket-28-sept-22"
