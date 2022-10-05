@@ -14,5 +14,3 @@ variable "ebs_encryption" {}
 variable "ebs_size" {}
 variable "ebs_AZ" {}
 variable "ebs-vol-type"{}
-variable "access_key"{}
-variable "secret_access_key"{}
