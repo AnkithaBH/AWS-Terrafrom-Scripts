@@ -13,6 +13,27 @@ resource "aws_s3_bucket_acl" "acl-1" {
   acl    = "private"
 }
 
+#Enable SSE using aws default kms key
+resource "aws_s3_bucket_server_side_encryption_configuration" "example" {
+  bucket = aws_s3_bucket.a.bucket
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm     = "aws:kms"
+    }
+  }
+}
+
+#Enable block public access
+resource "aws_s3_bucket_public_access_block" "example" {
+  bucket = aws_s3_bucket.a.id
+
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
+
 #Upload files to the bucket
 resource "aws_s3_bucket_object" "object-1" {
   bucket = "my-tf-test-bucket-28-sept-22"
