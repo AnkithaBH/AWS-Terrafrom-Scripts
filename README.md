@@ -1,6 +1,6 @@
 AWS-Terrafrom-Scripts
 
-Here you will find the terraform scripts of successfully executed mini-projects.
+Here you will find terraform scripts of successfully executed mini-projects.
 
 Categories:
 1.Compute
