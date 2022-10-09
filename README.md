@@ -6,5 +6,6 @@ Categories:
 1.Compute
 2.Storage
 3.Best Practices
+4.Application Integration
 
 
