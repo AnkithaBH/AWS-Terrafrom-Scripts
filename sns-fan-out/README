@@ -1,0 +1,3 @@
+#Publishing the message to the created SNS topic should be done manually
+#Publish and poll the messages of the created queues and notice the messages getting filtered
+#Refer the link, from step-5 to do so --->https://aws.amazon.com/getting-started/hands-on/filter-messages-published-to-topics/?trk=gs_card
